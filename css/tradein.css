@@ -1,0 +1,206 @@
+/*TradeIn css*/
+
+main .content {
+  width: 86%;
+  margin: auto;
+  white-space: nowrap;
+}
+.greyText {
+  color: #7d7d7d;
+}
+main .content p {
+  margin: 0;
+}
+.way {
+  width: 10%;
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 40px;
+}
+.TitleText {
+  width: 29.92%;
+  margin-top: 19px;
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 47px;
+}
+#marginUp {
+  margin-top: 20px;
+}
+.TradeInInfo {
+  width: 40%;
+  margin-bottom: 46px;
+  font-size: 18px;
+  line-height: 23px;
+}
+.TradeInBlock {
+  width: 87.74%;
+
+  margin-bottom: 58px;
+  display: flex;
+}
+.leftForm {
+  width: 46.32%;
+
+  margin-right: 7.35%;
+}
+.rightForm {
+  width: 46.32%;
+}
+.titleText {
+  margin-bottom: 20px;
+  width: 32.54%;
+  font-size: 24px;
+  line-height: 31px;
+}
+.technicalSpecifications {
+  width: 7.54%;
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 18px;
+}
+select {
+  color: #7d7d7d;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #aaaaaa;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 8px 16px;
+  margin-bottom: 20px;
+}
+.buttonTradeIn {
+  width: 87.74%;
+  border-radius: 8px;
+  height: 168px;
+  background: #ffd75b;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.buttonText {
+  width: 30.29%;
+}
+.firstPhone {
+  margin-bottom: 7px;
+}
+.buttonTradeIn * {
+  text-align: center;
+}
+.secondPhone {
+  margin-bottom: 19px;
+}
+.phoneName {
+  margin-right: 20px;
+}
+.firstInfoTradeIn {
+  width: 50.97%;
+  margin: 52px 0 12px 0;
+}
+.secondInfoTradeIn {
+  width: 62.5%;
+  margin-bottom: 58px;
+}
+.firstPhone,
+.phoneName {
+  font-size: 16px;
+  line-height: 22px;
+}
+.calc {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+}
+/*Личный кабинет css*/
+.personalInfo {
+  width: 37.1%;
+  margin-top: 65px;
+  margin-bottom: 73px;
+  display: flex;
+  justify-content: space-between;
+}
+.photoAccount {
+  width: 36.09%;
+}
+.aboutAccount {
+  width: 59.57%;
+  margin: 2.625% 0;
+}
+.orderInfo {
+  width: 44.76%;
+  display: flex;
+  justify-content: space-between;
+}
+.orderSearch,
+.orderStatus {
+  width: 45.95%;
+}
+.coins {
+  margin: 26px 0 4px 0;
+  font-size: 18px;
+  line-height: 23px;
+}
+#coinsBold {
+  font-weight: bold;
+}
+#numberAccount,
+#equality {
+  font-size: 12px;
+  line-height: 16px;
+}
+#nameAccount {
+  font-size: 36px;
+  line-height: 100%;
+}
+.inputOrder {
+  width: 100%;
+  border: 1px solid #aaaaaa;
+  border-radius: 4px;
+  padding: 8px 16px;
+  margin: 8px 0px;
+}
+#buttonAccount {
+  margin: 0;
+  font-size: 16px;
+  line-height: 21px;
+}
+.status {
+  background: #e8e8e8;
+  margin-top: 5px;
+  border-radius: 8px;
+  padding: 32px 0;
+  text-align: center;
+  font-size: 16px;
+  line-height: 22px;
+}
+.through p,
+.actuality p {
+  margin-bottom: 16px;
+}
+.through {
+  text-decoration-line: line-through;
+  color: #aaaaaa;
+}
+.actuality {
+  color: #0044bb;
+  font-weight: bold;
+}
+.numberOrder {
+  font-size: 14px;
+  line-height: 18px;
+}
+.next {
+  color: black;
+}
+.exit {
+  margin-top: 66px;
+  margin-bottom: 37px;
+  width: 15.56%;
+  font-size: 16px;
+  line-height: 22px;
+}
+.exit a {
+  color: #d1244d;
+}
