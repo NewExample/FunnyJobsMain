@@ -79,6 +79,7 @@ select {
   align-items: center;
   align-content: center;
   justify-content: center;
+  border: none;
 }
 .buttonText {
   width: 30.29%;

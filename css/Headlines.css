@@ -1,5 +1,5 @@
 .way {
-  margin: 0 7%;
+  margin: 0;
   margin-top: 40px;
   font-style: normal;
   font-weight: normal;
@@ -10,14 +10,14 @@
   color: #7d7d7d;
 }
 .titleHeadlines {
-  margin: 0 7%;
+  margin: 0;
   margin-top: 38px;
   font-weight: bold;
   font-size: 36px;
   line-height: 47px;
 }
 .HeadlinesText {
-  margin: 0 7%;
+  margin: 0;
   margin-top: 8px;
   font-style: normal;
   font-weight: normal;

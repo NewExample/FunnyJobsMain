@@ -6,7 +6,7 @@ $('.catalogButton').on('click', function(e) {
   $('.right').toggleClass('right_active');
 })
 
-$('.exit').on('click', function(e) {
+$('.cross').on('click', function(e) {
   e.preventDefault();
   $('.right').toggleClass('right_active');
   $('.menu').toggleClass('menu_active');
@@ -18,12 +18,18 @@ $(".catalogButton").mouseenter(function() {
   $('.right').toggleClass('right_active');
 });
 
-$(".exit")
+$(".cross")
 .mouseenter(function(){ 		
 	// отвели курсор с объекта (не учитываются переходы внутри элемента)
   $('.right').removeClass('right_active');
   $('.menu').toggleClass('menu_active');
 });
+
+$('.buttonSearchHiden').on('click', function(e) {
+  e.preventDefault();
+  $('.hideSearch').toggleClass('hide');
+  
+})
 
 /**  $(".greyTerritory")
 .mouseenter(function(){ 		

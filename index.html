@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/new.css">
+  <link rel="stylesheet" href="css/slider.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
@@ -15,26 +16,49 @@
 <body>
       <!-- Выпадающее Меню -->
       <div class="wrapper">
+        
         <div class="menu">
-          <nav class="menu-list">
-           <div> <a href="#"><img src="img/logo.svg" alt=""></a></div>
-           <div><a href="#">Каталог</a></div>
-          <div class="Overlay"><img src="img/phoneNav.svg" alt=""><a href="#">Смартфоны</a></div>
-          <div class="Overlay lab"><img src="img/labtobsNav.svg" alt=""><a href="#">Ноутбуки</a></div>
-          <div class="Overlay"><img src="img/AcsesuaresNav.svg" alt=""><a href="#">Аксессуары</a></div>
-          <div class="Overlay"><img src="img/TechnicNav.svg" alt=""><a href="#">Техника</a></div>
-          <div class="Overlay"><img src="img/macNav.svg" alt=""><a href="#">Планшеты</a></div>
-          <div class="Overlay"><img src="img/brendNav.svg" alt=""><a href="#">Бренды</a></div>
-          </nav>
+          <div class="fistcolumnOverlay">
+          <div class="menu-list">
+            
+          <div> <a href="#"></a><img src="img/logo.svg" alt="" width="29.86%"></a></div>
+          <div class="Overlay catalogOverlay "><a href="#">Каталог</a></div>
+          <div class="Overlay smartphoneOverlay"><img src="img/phoneNav.svg" alt=""><a href="#">Смартфоны</a></div>
+          <div class="Overlay laptopsOverlay"><img src="img/labtobsNav.svg" alt=""><a href="#">Ноутбуки</a></div>
+          <div class="Overlay accessoriesOverlay"><img src="img/AcsesuaresNav.svg" alt=""><a href="#">Аксессуары</a></div>
+          <div class="Overlay tecnicsOverlay"><img src="img/TechnicNav.svg" alt=""><a href="#">Техника</a></div>
+          <div class="Overlay tabletsOverlay"><img src="img/macNav.svg" alt=""><a href="#">Планшеты</a></div>
+          <div class="Overlay brendsOverlay"><img src="img/brendNav.svg" alt=""><a href="#">Бренды</a></div>
+          </div>
+          
+
+            <div class="smarphonesMenu">
+              <p>Смартфоны</p>
+              <p>Дешёвые смартфоны</p>
+              <p>С хорошей камерой</p>
+              <p>Для игр</p>
+              <p>Apple iPhone</p>
+              <p>Xiaomi</p>
+              <p>Samsung</p>
+              <p>Redmi</p>
+              <p>Huawei</p>
+              <p>LG</p>
+              <p>Meizu</p>
+              <p>Посмотреть всё →</p>
+            </div>
+            </div>
         </div>
+
         <div class="right">
-          <img class="exit" src="img/Group.svg" alt="" width="16px">
+          <div class="exitOverlay">
+          <img class="cross" src="img/Group.svg" alt="" width="16px">
+          </div>
         </div>
       </div>
       <!-- Выпадающее Меню -->
+      
 
 
-  
     <header>
       <div class="content">
         <div class="logoHeader">
@@ -52,7 +76,7 @@
           </div>
           <div class="phone">
     
-            <a href="tel:+79658077817"><img src="img/phone.svg" alt=""> <span>+7 965 807 78 18</span></a>
+            <a href="tel:+79658077817"><img src="img/phone.svg" alt="" width="12px"> <span>+7 965 807 78 18</span></a>
           </div>
           <div class="placeHeader">
             <p>Великий Новгород</p>
@@ -63,8 +87,9 @@
           <button class="placeAnOrder catalogButton"><img src="img/gamburger.svg" alt=""><span>Каталог товаров</span></button>
           <div class="inputHeader">
             <input type="text" class="resizedHeader" placeholder="Apple iPhone">
-            <span><img src="img/search.svg" alt=""></span>
+            <span class="buttonSearchHiden"><img src="img/search.svg" alt=""></span>
           </div>
+          
           <div class="cabinetBlock">
             <div class="cabinetNumCenter">
               <a href="reiting.html"><img src="img/rating.svg" alt=""></a>
@@ -84,9 +109,16 @@
           </div>
         </div>
       </div>
+      <div class="hideSearch hide">
+        <div class="TextSearch">
+          <p>Беспроводные наушники</p>
+          <p>Проводные наушники</p>
+        </div>
+      </div>
     </header>
   
     <main>
+      <div class="content">
       <div class="catalog">
         <div class="smartphone">Смартфоны <div class="pictures"><img src="img/smartphone.png" alt=""></div></div>
         <div class="accessories">Аксессуары<div class="pictures"><img src="img/accessories.png" alt=""></div></div>
@@ -96,43 +128,85 @@
       </div>
 
       <div class="slider">
-        <div class="firstArrow">
-          <span class="leftArrow"><img src="img/leftArrow.svg" alt=""></span>
-        </div>
-        <div class="middleBlock"></div>
-          <div class="iphone12"><img src="img/smartphone.svg"  height="208px" alt=""></div>
-          <div class="bought">
-            <div class="firstSlider">iPhone 12 mini</div>
-            <div class="prices">78 199 ₽</div>
-            <sdiv class="sales">84 999 ₽</div>
-            <div class="inBasket"><img src="img/basket.svg" width="16px" alt=""><span class="buttonbasket">Купить</span></div>
-          
-          <div class="dots">
-            <div class="dotsActive"><img src="img/dotsActive.svg" alt=""></div>
-            <div class="dotsDiactive"><img src="img/dotsDiactive.svg" alt=""></div>
-            <div class="dotsDiactive"><img src="img/dotsDiactive.svg" alt=""></div>
-          </div>
-        
-        <div class="secondArrow">
-          <span class="rightArrow"><img src="img/rightArrow.svg" alt=""></span>
-        </div>
+      <div class="sim-slider">
+        <ul class="sim-slider-list">
+          <li><img src="" alt=""></li> <!-- это экран -->
+          <li class="sim-slider-element">
+            <div class="sliderItem">
+              <div class="imgSlider"><img src="img/smartphone.png" alt=""></div>
+              <div class="descriptionsSliderItem">
+                <p class="boldTextSlider">iPhone 12 mini</p>
+                <p class="normalTextSlider">78 199 ₽</p>
+                <p class="greyTextSlider">84 999 ₽</p>
+                <button class="ButtonBasket"><img src="img/basket.svg" alt=""><span>В корзину</span></button>
+              </div>
+            </div>
+          </li>
+          <li class="sim-slider-element">
+            <div class="sliderItem">
+              <div class="imgSlider"><img src="img/accessories.png" alt=""></div>
+              <div class="descriptionsSliderItem">
+                <p class="boldTextSlider">iPhone 12 mini</p>
+                <p class="normalTextSlider">78 199 ₽</p>
+                <p class="greyTextSlider">84 999 ₽</p>
+                <button class="ButtonBasket"><img src="img/basket.svg" alt=""><span>В корзину</span></button>
+              </div>
+            </div>
+          </li>
+          <li class="sim-slider-element">
+            <div class="sliderItem">
+              <div class="imgSlider"><img src="img/smartphone.png" alt=""></div>
+              <div class="descriptionsSliderItem">
+                <p class="boldTextSlider">iPhone 12 mini</p>
+                <p class="normalTextSlider">78 199 ₽</p>
+                <p class="greyTextSlider">84 999 ₽</p>
+                <button class="ButtonBasket"><img src="img/basket.svg" alt=""><span>В корзину</span></button>
+              </div>
+            </div>
+          </li>
+          <li class="sim-slider-element">
+            <div class="sliderItem">
+              <div class="imgSlider"><img src="img/accessories.png" alt=""></div>
+              <div class="descriptionsSliderItem">
+                <p class="boldTextSlider">iPhone 12 mini</p>
+                <p class="normalTextSlider">78 199 ₽</p>
+                <p class="greyTextSlider">84 999 ₽</p>
+                <button class="ButtonBasket"><img src="img/basket.svg" alt=""><span>В корзину</span></button>
+              </div>
+            </div>
+          </li>
+          <li class="sim-slider-element">
+            <div class="sliderItem">
+              <div class="imgSlider"><img src="img/smartphone.png" alt=""></div>
+              <div class="descriptionsSliderItem">
+                <p class="boldTextSlider">iPhone 12 mini</p>
+                <p class="normalTextSlider">78 199 ₽</p>
+                <p class="greyTextSlider">84 999 ₽</p>
+                <button class="ButtonBasket"><img src="img/basket.svg" alt=""><span>В корзину</span></button>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="sim-slider-arrow-left"></div>
+        <div class="sim-slider-arrow-right"></div>
+        <div class="sim-slider-dots"></div>
       </div>
-
+      </div>
       
       <div class="locationFN">Точки продаж в Великом Новгороде</div>
 
       <div class="geo">
         <div class="shopVolna">
           <span class="Volna"><img class="shop" src="img/ShopVN.png" alt="VolnaShop"></span>
-          <span class=""><img src="img/GEO.svg" alt="">ТЦ «Волна», секция 124</span>
+          <span class=""><img src="img/GEO.svg" alt=""><span class="geoLeft">ТЦ «Волна», секция 124</span></span>
         </div>
         <div class="shopVolna">
           <span class="RUS"><img class="shop" src="img/ShopVN.png" alt="RusShop"></span>
-          <span class=""><img src="img/GEO.svg" alt="">ТД «Русь», 1 этаж</span>
+          <span class=""><img src="img/GEO.svg" alt=""><span class="geoLeft">ТД «Русь», 1 этаж</span></span>
         </div>
         <div class="shopVolna">
           <span class="Marmelad"><img class="shop" src="img/ShopVN.png" alt="MarmeladShop"></span>
-          <span class=""><img src="img/GEO.svg" alt="">ТРЦ «Мармелад», 1 этаж</span>
+          <span class=""><img src="img/GEO.svg" alt=""><span class="geoLeft">ТРЦ «Мармелад», 1 этаж</span></span>
         </div>
       </div>
           
@@ -181,7 +255,7 @@
           <div class="viewAll">Посмотреть все (121)</div>
         <div class="technicProducts tovar">Техника →</div>
           <div class="lider">
-            <div class="technic1"><img src="img/technic1.png" alt=""><div class="description">Xiaomi Redmi Note9 64/3 Gb NFC Оранжевый</div><div class="price"8 670 ₽></div></div>
+            <div class="technic1"><img src="img/technic1.png" alt=""><div class="description">Xiaomi Redmi Note9 64/3 Gb NFC Оранжевый</div><div class="price">8 670 ₽</div></div>
             <div class="technic2"><img src="img/technic2.png" alt=""><div class="description">Apple iPhone 11 Max Pro Аквамарин</div><div class="price">8 670 ₽</div></div>
             <div class="technic3"><img src="img/technic3.png" alt=""><div class="description">Apple iPhone 11 Max Pro Аквамарин</div><div class="price">8 670 ₽</div></div>
             <div class="technic4"><img src="img/technic4.png" alt=""><div class="description">Xiaomi Redmi Note9 64/3 Gb NFC Оранжевый</div><div class="price">8 670 ₽</div></div>
@@ -203,12 +277,12 @@
       </div>
         
       
-      
+      </div>
     </main>
     
     
 
-    <footer>
+    <footer class="indexFooter">
       <div class="content">
         <div class="border"></div>
         <div class="footerBlock">
@@ -238,11 +312,11 @@
             <span class="boldText">
               <p>Каталог</p>
             </span>
-            <p><a href="">Смартфоны</a></p>
-            <p><a href="">Ноутбуки</a></p>
-            <p<a href="">Аксессуары</a></p>
-              <p><a href="">Техника</a></p>
-              <p><a href="">Планшеты</a></p>
+            <p><a href="catalogSmartphone.html">Смартфоны</a></p>
+            <p><a href="catalogSmartphone.html">Ноутбуки</a></p>
+            <p><a href="catalogSmartphone.html">Аксессуары</a></p>
+              <p><a href="catalogSmartphone.html">Техника</a></p>
+              <p><a href="catalogSmartphone.html">Планшеты</a></p>
           </div>
           <div class="hrefPartners">
             <span class="boldText">
@@ -261,5 +335,8 @@
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/slider.js"></script>
+    <script>new Sim()</script>
 </body>
+
 </html>

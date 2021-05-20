@@ -17,6 +17,51 @@
 </head>
 <body>
   
+      <!-- Выпадающее Меню -->
+      <div class="wrapper">
+      
+        <div class="menu">
+          <div class="fistcolumnOverlay">
+            <div class="menu-list">
+      
+              <div> <a href="#"></a><img src="img/logo.svg" alt="" width="29.86%"></a></div>
+              <div class="Overlay catalogOverlay "><a href="#">Каталог</a></div>
+              <div class="Overlay smartphoneOverlay"><img src="img/phoneNav.svg" alt=""><a href="#">Смартфоны</a></div>
+              <div class="Overlay laptopsOverlay"><img src="img/labtobsNav.svg" alt=""><a href="#">Ноутбуки</a></div>
+              <div class="Overlay accessoriesOverlay"><img src="img/AcsesuaresNav.svg" alt=""><a href="#">Аксессуары</a></div>
+              <div class="Overlay tecnicsOverlay"><img src="img/TechnicNav.svg" alt=""><a href="#">Техника</a></div>
+              <div class="Overlay tabletsOverlay"><img src="img/macNav.svg" alt=""><a href="#">Планшеты</a></div>
+              <div class="Overlay brendsOverlay"><img src="img/brendNav.svg" alt=""><a href="#">Бренды</a></div>
+            </div>
+      
+      
+            <div class="smarphonesMenu">
+              <p>Смартфоны</p>
+              <p>Дешёвые смартфоны</p>
+              <p>С хорошей камерой</p>
+              <p>Для игр</p>
+              <p>Apple iPhone</p>
+              <p>Xiaomi</p>
+              <p>Samsung</p>
+              <p>Redmi</p>
+              <p>Huawei</p>
+              <p>LG</p>
+              <p>Meizu</p>
+              <p>Посмотреть всё →</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="right">
+          <div class="exitOverlay">
+            <img class="cross" src="img/Group.svg" alt="" width="16px">
+          </div>
+        </div>
+      </div>
+      <!-- Выпадающее Меню -->
+      
+      
+      
       <header>
         <div class="content">
           <div class="logoHeader">
@@ -34,7 +79,7 @@
             </div>
             <div class="phone">
       
-              <a href="tel:+79658077817"><img src="img/phone.svg" alt=""> <span>+7 965 807 78 18</span></a>
+              <a href="tel:+79658077817"><img src="img/phone.svg" alt="" width="12px"> <span>+7 965 807 78 18</span></a>
             </div>
             <div class="placeHeader">
               <p>Великий Новгород</p>
@@ -42,11 +87,13 @@
             </div>
           </div>
           <div class="searchHeader">
-            <button class="placeAnOrder catalogButton"><img src="img/gamburger.svg" alt=""><span>Каталог товаров</span></button>
+            <button class="placeAnOrder catalogButton"><img src="img/gamburger.svg" alt=""><span>Каталог
+                товаров</span></button>
             <div class="inputHeader">
               <input type="text" class="resizedHeader" placeholder="Apple iPhone">
-              <span><img src="img/search.svg" alt=""></span>
+              <span class="buttonSearchHiden"><img src="img/search.svg" alt=""></span>
             </div>
+      
             <div class="cabinetBlock">
               <div class="cabinetNumCenter">
                 <a href="reiting.html"><img src="img/rating.svg" alt=""></a>
@@ -57,13 +104,19 @@
               <div class="cabinetNumCenter">
                 <a href="Basket.html">
                   <button>
-                
+      
                     <img src="img/basket.svg" alt=""><span class="centerNum">3</span>
-                
+      
                   </button>
                 </a>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="hideSearch hide">
+          <div class="TextSearch">
+            <p>Беспроводные наушники</p>
+            <p>Проводные наушники</p>
           </div>
         </div>
       </header>
@@ -155,7 +208,7 @@
               </select>
             </div>
           </div>
-          <div class="buttonTradeIn">
+          <button class="buttonTradeIn">
             <div class="buttonText">
               <div class="firstPhone">
                 <span class="phoneName">Google Pixel 2 64Gb</span>
@@ -170,7 +223,7 @@
                 <span>56 000 руб.</span>
               </div>
             </div>
-          </div>
+          </button>
           <div class="firstInfoTradeIn">
             <p>* Покупки по системе Trade-In возможны только в наших фирменных магазинах</p>
           </div>
@@ -210,11 +263,11 @@
               <span class="boldText">
                 <p>Каталог</p>
               </span>
-              <p><a href="">Смартфоны</a></p>
-              <p><a href="">Ноутбуки</a></p>
-              <p<a href="">Аксессуары</a></p>
-                <p><a href="">Техника</a></p>
-                <p><a href="">Планшеты</a></p>
+              <p><a href="catalogSmartphone.html">Смартфоны</a></p>
+              <p><a href="catalogSmartphone.html">Ноутбуки</a></p>
+              <p><a href="catalogSmartphone.html">Аксессуары</a></p>
+                <p><a href="catalogSmartphone.html">Техника</a></p>
+                <p><a href="catalogSmartphone.html">Планшеты</a></p>
             </div>
             <div class="hrefPartners">
               <span class="boldText">
@@ -229,6 +282,8 @@
           </div>
         </div>
       </footer>
-  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/slider.js"></script>
 </body>
 </html>

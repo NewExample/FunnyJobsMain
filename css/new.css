@@ -8,6 +8,10 @@
   font-weight: bold;
 }
 
+.catalogButton {
+  white-space: nowrap;
+}
+
 button,
 a,
 select {
@@ -22,7 +26,7 @@ select option {
 }
 
 .content {
-  width: 86%;
+  max-width: 87%;
   margin: 0 auto;
 }
 .resizedHeader {
