@@ -7,6 +7,11 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/new.css">
   <link rel="stylesheet" href="css/slider.css">
+
+  
+
+
+  <link rel="stylesheet" href="css/media.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
@@ -57,7 +62,7 @@
       </div>
       <!-- Выпадающее Меню -->
       
-
+      
 
     <header>
       <div class="content">
@@ -80,11 +85,14 @@
           </div>
           <div class="placeHeader">
             <p>Великий Новгород</p>
-            <p id="grey">Пн−Сб 10:00−21:00, Вс 11:00−20:00</p>
+            <p id="grey">Пн−Сб 10:00−21:00<span class="HidePlace">, Вс 11:00−20:00</span></p>
+            <p id="grey" class="showPlace">Вс 11:00−20:00</p>
+            
+            
           </div>
         </div>
         <div class="searchHeader">
-          <button class="placeAnOrder catalogButton"><img src="img/gamburger.svg" alt=""><span>Каталог товаров</span></button>
+          <button class="placeAnOrder catalogButton"><img src="img/gamburger.svg" alt=""><span class="hideCatalog">Каталог товаров</span></button>
           <div class="inputHeader">
             <input type="text" class="resizedHeader" placeholder="Apple iPhone">
             <span class="buttonSearchHiden"><img src="img/search.svg" alt=""></span>
@@ -108,6 +116,28 @@
             </div>
           </div>
         </div>
+
+        <div id="logoHeader">
+          <button class="placeAnOrder catalogButton"><img src="img/gamburger.svg" alt=""></button>
+          <div class="imgLogoHeader"><a href="index.html"><img src="img/logo.svg" alt=""></a></div>
+          <div class="cabinetNumCenter">
+            <a href="Basket.html">
+              <button>
+          
+                <img src="img/basket.svg" alt=""><span class="centerNum">3</span>
+          
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div id="searchHeader">
+          <div class="inputHeader">
+            <input type="text" class="resizedHeader" placeholder="Apple iPhone">
+            <span class="buttonSearchHiden"><img src="img/search.svg" alt=""></span>
+          </div>
+        </div>
+
       </div>
       <div class="hideSearch hide">
         <div class="TextSearch">
@@ -119,14 +149,27 @@
   
     <main>
       <div class="content">
-      <div class="catalog">
-        <div class="smartphone">Смартфоны <div class="pictures"><img src="img/smartphone.png" alt=""></div></div>
-        <div class="accessories">Аксессуары<div class="pictures"><img src="img/accessories.png" alt=""></div></div>
-        <div class="laptops">Ноутбуки<div class="pictures"><img src="img/laptops.png" alt=""></div></div>
-        <div class="technic">Техника<div class="pictures"><img src="img/technic.png" alt=""></div></div>
-        <div class="tablets" >Планшеты<div class="pictures"><img src="img/tablets.png" alt=""></div></div>
-      </div>
 
+        <div class="photoSales salesHidden">
+          <div class="leftSalesBlock">
+            <img src="/img/smartphone.svg" alt="">
+          </div>
+          <div class="rightSalesBlock">
+            <div class="titleSales">iPhone 12 mini</div>
+            <div class="firstPrice">78 199 ₽</div>
+            <span class="SecondPrice">84 999 ₽
+          </div>
+        </div>
+
+
+      <div class="catalog ">
+        <div class="smartphone"><div>Смартфоны</div><div class="pictures"><img src="img/smartphone.png" alt=""></div></div>
+        <div class="accessories"><div>Аксессуары</div><div class="pictures"><img src="img/accessories.png" alt=""></div></div>
+        <div class="laptops"><div>Ноутбуки</div><div class="pictures"><img src="img/laptops.png" alt=""></div></div>
+        <div class="technic"><div>Техника</div><div class="pictures"><img src="img/technic.png" alt=""></div></div>
+        <div class="tablets" ><div>Планшеты</div><div class="pictures"><img src="img/tablets.png" alt=""></div></div>
+      </div>
+      
       <div class="slider">
       <div class="sim-slider">
         <ul class="sim-slider-list">
@@ -213,64 +256,67 @@
       <div class="categories">
         <div class="salesleaderProducts tovar">Лидеры продаж → </div>
           <div class="lider">
-           <div class="lider1"><img src="img/lider1.png" alt=""><div class="description">Xiaomi Redmi Note9 64/3 Gb NFC Оранжевый</div><div class="price">8 670 ₽</div><div class="inBasket"><img src="img/basket.svg" width="16px" alt=""><span class="buttonbasket">В корзину</span></div></div>
-           <div class="lider2"><img src="img/lider2.png" alt=""><div class="description">Apple iPhone 11 Max 128 Gb Чёрный</div><div class="price">118 670 ₽</div><div class="inBasket"><img src="img/basket.svg" width="16px" alt=""><span class="buttonbasket">В корзину</span></div></div>
-           <div class="lider3"><img src="img/lider3.png" alt=""><div class="description">Наушники AirPods 3 поколения</div><div class="price">13 670 ₽</div><div class="inBasket"><img src="img/basket.svg" width="16px" alt=""><span class="buttonbasket">В корзину</span></div></div>
-           <div class="lider4"><img src="img/lider4.png" alt=""><div class="description">Huawei Honor 96C 128/4 Gb Чёрный</div><div class="price">8 670 ₽</div><div class="inBasket"><img src="img/basket.svg" width="16px" alt=""><span class="buttonbasket">В корзину</span></div></div>
-           <div class="lider5"><img src="img/lider5.png" alt=""><div class="description">PowerBank Xiaomi 3000 мА/ч</div><div class="price">2 600 ₽</div><div class="inBasket"><img src="img/basket.svg" width="16px" alt=""><span class="buttonbasket">В корзину</span></div></div>
-           <div class="lider6"><img src="img/lider6.png" alt=""><div class="description">Пылесос Xiaomi ProCleaner
+           <div class="liderITEMS"><img id="lider" src="img/lider1.png" alt=""><div class="description">Xiaomi Redmi Note9 64/3 Gb NFC Оранжевый</div><div class="price">8 670 ₽</div><div class="inBasket"><img src="img/basket.svg" width="16px" alt=""><span class="buttonbasket">В корзину</span></div></div>
+           <div class="liderITEMS"><img id="lider" src="img/lider2.png" alt=""><div class="description">Apple iPhone 11 Max 128 Gb Чёрный</div><div class="price">118 670 ₽</div><div class="inBasket"><img src="img/basket.svg" width="16px" alt=""><span class="buttonbasket">В корзину</span></div></div>
+           <div class="liderITEMS"><img id="lider" src="img/lider3.png" alt=""><div class="description">Наушники AirPods 3 поколения</div><div class="price">13 670 ₽</div><div class="inBasket"><img src="img/basket.svg" width="16px" alt=""><span class="buttonbasket">В корзину</span></div></div>
+           <div class="liderITEMS"><img id="lider" src="img/lider4.png" alt=""><div class="description">Huawei Honor 96C 128/4 Gb Чёрный</div><div class="price">8 670 ₽</div><div class="inBasket"><img src="img/basket.svg" width="16px" alt=""><span class="buttonbasket">В корзину</span></div></div>
+           <div class="liderITEMS"><img id="lider" src="img/lider5.png" alt=""><div class="description">PowerBank Xiaomi 3000 мА/ч</div><div class="price">2 600 ₽</div><div class="inBasket"><img src="img/basket.svg" width="16px" alt=""><span class="buttonbasket">В корзину</span></div></div>
+           <div class="liderITEMS"><img id="lider" src="img/lider6.png" alt=""><div class="description">Пылесос Xiaomi ProCleaner
           12/13</div><div class="price">5 570 ₽</div><div class="inBasket"><img src="img/basket.svg" width="16px" alt=""><span class="buttonbasket">В корзину</span></div></div>
           </div>
           
         <div class="smartphoneProducts tovar">Смартфоны → </div>
           <div class="lider">
-            <div class="smartphone1"><img src="img/smartphone1.png" alt=""><div class="description">Xiaomi Redmi Note9 64/3 Gb NFC Оранжевый</div><div class="price">8 670 ₽</div></div>
-            <div class="smartphone2"><img src="img/smartphone2.png" alt=""><div class="description">Apple iPhone 11 Max Pro Аквамарин</div><div class="price">105 670 ₽</div></div>
-            <div class="smartphone3"><img src="img/smartphone3.png" alt=""><div class="description">Apple iPhone 11 Max Pro Аквамарин</div><div class="price">102 000 ₽</div></div>
-            <div class="smartphone4"><img src="img/smartphone4.png" alt=""><div class="description">Xiaomi Redmi Note 8 64/3 Gb NFC Чёрный</div><div class="price">8 670 ₽</div></div>
-            <div class="smartphone5"><img src="img/smartphone7.png" alt=""><div class="description">Apple iPhone SE2 64 Gb Белый</div><div class="price">25 320 ₽</div></div>
-            <div class="smartphone6"><img src="img/smartphone6.png" alt=""><div class="description">Xiaomi Redmi Note9 64/3 Gb NFC Синий</div><div class="price">9 500 ₽</div></div>
+            <div class="smartphoneITEMS"><img id="smartphone" src="img/smartphone1.png" alt=""><div class="description">Xiaomi Redmi Note9 64/3 Gb NFC Оранжевый</div><div class="price">8 670 ₽</div></div>
+            <div class="smartphoneITEMS"><img id="smartphone" src="img/smartphone2.png" alt=""><div class="description">Apple iPhone 11 Max Pro Аквамарин</div><div class="price">105 670 ₽</div></div>
+            <div class="smartphoneITEMS"><img id="smartphone" src="img/smartphone3.png" alt=""><div class="description">Apple iPhone 11 Max Pro Аквамарин</div><div class="price">102 000 ₽</div></div>
+            <div class="smartphoneITEMS"><img id="smartphone" src="img/smartphone4.png" alt=""><div class="description">Xiaomi Redmi Note 8 64/3 Gb NFC Чёрный</div><div class="price">8 670 ₽</div></div>
+            <div class="smartphoneITEMS"><img id="smartphone" src="img/smartphone7.png" alt=""><div class="description">Apple iPhone SE2 64 Gb Белый</div><div class="price">25 320 ₽</div></div>
+            <div class="smartphoneITEMS"><img id="smartphone" src="img/smartphone6.png" alt=""><div class="description">Xiaomi Redmi Note9 64/3 Gb NFC Синий</div><div class="price">9 500 ₽</div></div>
           </div>
           <div class="viewAll">Посмотреть все (234)</div>
         <div class="accessoriesProducts tovar">Аксессуары →</div>
           <div class="lider">
-            <div class="smartphone1"><img src="img/accessories1.png" alt=""><div class="description">Наручный браслет Xiaomi Mi Band 4</div><div class="price">3 200 ₽</div></div>
-            <div class="accessories2"><img src="img/accessories2.png" alt=""><div class="description">Переходник для iPhone
+            <div class="accessoriesITEMS"><img id="accessories" src="img/accessories2.png" alt=""><div class="description">Переходник для iPhone
             Lightning / USB-C</div><div class="price">520 ₽</div></div>
-            <div class="smartphone3"><img src="img/accessories3.png" alt=""><div class="description">Xiaomi PoweBank 3000mA/ч</div><div class="price">2 000 ₽</div></div>
-            <div class="accessories4"><img src="img/accessories4.png" alt=""><div class="description">Беспроводные наушники Apple AirPods 3</div><div class="price">23 570 ₽</div></div>
-            <div class="accessories5"><img src="img/accessories5.png" alt=""><div class="description">Беспроводные наушники Redmi AirDots 2</div><div class="price">2 300 ₽</div></div>
-            <div class="accessories6"><img src="img/accessories6.png" alt=""><div class="description">Смарт-часы Apple Watch S3 38mm Silver Al</div><div class="price">30 070 ₽</div></div>
+            <div class="accessoriesITEMS"><img id="accessories" src="img/accessories3.png" alt=""><div class="description">Xiaomi PoweBank 3000mA/ч</div><div class="price">2 000 ₽</div></div>
+            <div class="accessoriesITEMS"><img id="accessories" src="img/accessories4.png" alt=""><div class="description">Беспроводные наушники Apple AirPods 3</div><div class="price">23 570 ₽</div></div>
+            <div class="accessoriesITEMS"><img id="accessories" src="img/accessories5.png" alt=""><div class="description">Беспроводные наушники Redmi AirDots 2</div><div class="price">2 300 ₽</div></div>
+            <div class="accessoriesITEMS"><img id="accessories" src="img/accessories6.png" alt=""><div class="description">Смарт-часы Apple Watch S3 38mm Silver Al</div><div class="price">30 070 ₽</div></div>
+            <div class="accessoriesITEMS"><img id="accessories" src="img/accessories3.png" alt="">
+              <div class="description">Xiaomi PoweBank 3000mA/ч</div>
+              <div class="price">2 000 ₽</div>
+            </div>
           </div>
           <div class="viewAll">Посмотреть все (121)</div>
         <div class="laptopsProducts tovar" >Ноутбуки →</div>
           <div class="lider">
-            <div class="laptops1"><img src="img/laptops1.png" alt=""><div class="description">Apple MacBook Air 13 Mid 2017</div><div class="price">64 600 ₽</div></div>
-            <div class="laptops2"><img src="img/laptops2.png" alt=""><div class="description">Apple MacBook Air 13 Retina True Tone Mid 2019</div><div class="price">92 900 ₽</div></div>
-            <div class="laptops3"><img src="img/laptops3.png" alt=""><div class="description">Apple iPhone 11 Max Pro Аквамарин</div><div class="price">8 670 ₽</div></div>
-            <div class="laptops4"><img src="img/laptops4.png" alt=""><div class="description">Xiaomi Redmi Note 8 64/3 Gb NFC Чёрный</div><div class="price">8 670 ₽</div></div>
-            <div class="laptops5"><img src="img/laptops5.png" alt=""><div class="description">Apple iPhone SE2 64 Gb Белый</div><div class="price">8 670 ₽</div></div>
-            <div class="laptops6"><img src="img/laptops6.png" alt=""><div class="description">Xiaomi Redmi Note9 64/3 Gb NFC Синий</div><div class="price">8 670 ₽</div></div>
+            <div class="laptopsITEMS"><img id="laptops" src="img/laptops1.png" alt=""><div class="description">Apple MacBook Air 13 Mid 2017</div><div class="price">64 600 ₽</div></div>
+            <div class="laptopsITEMS"><img id="laptops" src="img/laptops2.png" alt=""><div class="description">Apple MacBook Air 13 Retina True Tone Mid 2019</div><div class="price">92 900 ₽</div></div>
+            <div class="laptopsITEMS"><img id="laptops" src="img/laptops3.png" alt=""><div class="description">Apple iPhone 11 Max Pro Аквамарин</div><div class="price">8 670 ₽</div></div>
+            <div class="laptopsITEMS"><img id="laptops" src="img/laptops4.png" alt=""><div class="description">Xiaomi Redmi Note 8 64/3 Gb NFC Чёрный</div><div class="price">8 670 ₽</div></div>
+            <div class="laptopsITEMS"><img id="laptops" src="img/laptops5.png" alt=""><div class="description">Apple iPhone SE2 64 Gb Белый</div><div class="price">8 670 ₽</div></div>
+            <div class="laptopsITEMS"><img id="laptops" src="img/laptops6.png" alt=""><div class="description">Xiaomi Redmi Note9 64/3 Gb NFC Синий</div><div class="price">8 670 ₽</div></div>
           </div>
           <div class="viewAll">Посмотреть все (121)</div>
         <div class="technicProducts tovar">Техника →</div>
           <div class="lider">
-            <div class="technic1"><img src="img/technic1.png" alt=""><div class="description">Xiaomi Redmi Note9 64/3 Gb NFC Оранжевый</div><div class="price">8 670 ₽</div></div>
-            <div class="technic2"><img src="img/technic2.png" alt=""><div class="description">Apple iPhone 11 Max Pro Аквамарин</div><div class="price">8 670 ₽</div></div>
-            <div class="technic3"><img src="img/technic3.png" alt=""><div class="description">Apple iPhone 11 Max Pro Аквамарин</div><div class="price">8 670 ₽</div></div>
-            <div class="technic4"><img src="img/technic4.png" alt=""><div class="description">Xiaomi Redmi Note9 64/3 Gb NFC Оранжевый</div><div class="price">8 670 ₽</div></div>
-            <div class="technic5"><img src="img/technic5.png" alt=""><div class="description">Apple iPhone 11 Max Pro Аквамарин</div><div class="price">8 670 ₽</div></div>
-            <div class="technic6"><img src="img/technic6.png" alt=""><div class="description">Apple iPhone 11 Max Pro Аквамарин</div><div class="price">8 670 ₽</div></div>
+            <div class="technicITEMS"><img id="technic" src="img/technic1.png" alt=""><div class="description">Xiaomi Redmi Note9 64/3 Gb NFC Оранжевый</div><div class="price">8 670 ₽</div></div>
+            <div class="technicITEMS"><img id="technic" src="img/technic2.png" alt=""><div class="description">Apple iPhone 11 Max Pro Аквамарин</div><div class="price">8 670 ₽</div></div>
+            <div class="technicITEMS"><img id="technic" src="img/technic3.png" alt=""><div class="description">Apple iPhone 11 Max Pro Аквамарин</div><div class="price">8 670 ₽</div></div>
+            <div class="technicITEMS"><img id="technic" src="img/technic4.png" alt=""><div class="description">Xiaomi Redmi Note9 64/3 Gb NFC Оранжевый</div><div class="price">8 670 ₽</div></div>
+            <div class="technicITEMS"><img id="technic" src="img/technic5.png" alt=""><div class="description">Apple iPhone 11 Max Pro Аквамарин</div><div class="price">8 670 ₽</div></div>
+            <div class="technicITEMS"><img id="technic" src="img/technic6.png" alt=""><div class="description">Apple iPhone 11 Max Pro Аквамарин</div><div class="price">8 670 ₽</div></div>
           </div>
           <div class="viewAll">Посмотреть все (121)</div>
         <div class="tabletsProducts tovar">Планшеты →</div>
           <div class="lider">
-            <div class="tablets1"><img src="img/tablets1.png" alt=""><div class="description">Xiaomi Redmi Note9 64/3 Gb NFC Оранжевый</div><div class="price">8 670 ₽</div></div>
-            <div class="tablets2"><img src="img/tablets2.png" alt=""><div class="description">Apple iPhone 11 Max Pro Аквамарин</div><div class="price">8 670 ₽</div></div>
-            <div class="tablets3"><img src="img/tablets3.png" alt=""><div class="description">Apple iPhone 11 Max Pro Аквамарин</div><div class="price">8 670 ₽</div></div>
-            <div class="tablets4"><img src="img/tablets4.png" alt=""><div class="description">Xiaomi Redmi Note9 64/3 Gb NFC Оранжевый</div><div class="price">8 670 ₽</div></div>
-            <div class="tablets5"><img src="img/tablets5.png" alt=""><div class="description">Apple iPhone 11 Max Pro Аквамарин</div><div class="price">8 670 ₽</div></div>
-            <div class="tablets6"><img src="img/tablets6.png" alt=""><div class="description">Apple iPhone 11 Max Pro Аквамарин</div><div class="price">8 670 ₽</div></div>
+            <div class="tabletsITEMS"><img id="tablets" src="img/tablets1.png" alt=""><div class="description">Xiaomi Redmi Note9 64/3 Gb NFC Оранжевый</div><div class="price">8 670 ₽</div></div>
+            <div class="tabletsITEMS"><img id="tablets" src="img/tablets2.png" alt=""><div class="description">Apple iPhone 11 Max Pro Аквамарин</div><div class="price">8 670 ₽</div></div>
+            <div class="tabletsITEMS"><img id="tablets" src="img/tablets3.png" alt=""><div class="description">Apple iPhone 11 Max Pro Аквамарин</div><div class="price">8 670 ₽</div></div>
+            <div class="tabletsITEMS"><img id="tablets" src="img/tablets4.png" alt=""><div class="description">Xiaomi Redmi Note9 64/3 Gb NFC Оранжевый</div><div class="price">8 670 ₽</div></div>
+            <div class="tabletsITEMS"><img id="tablets" src="img/tablets5.png" alt=""><div class="description">Apple iPhone 11 Max Pro Аквамарин</div><div class="price">8 670 ₽</div></div>
+            <div class="tabletsITEMS"><img id="tablets" src="img/tablets6.png" alt=""><div class="description">Apple iPhone 11 Max Pro Аквамарин</div><div class="price">8 670 ₽</div></div>
           </div>
           
           <div class="viewAll">Посмотреть все (121)</div>
@@ -295,11 +341,13 @@
             </div>
             <div class="phoneNumber">
               <a href="tel:+79658077817">+7 965 807 78 18</a>
+              
+
             </div>
           </div>
           <div class="hrefBlock">
             <span class="boldText">
-              <p>О компании</p>
+              <p >О компании</p>
             </span>
             <p><a href="catalogSmartphone.html">Каталог</a></p>
             <p><a href="Remont.html">Ремонт</a></p>
@@ -330,13 +378,52 @@
     
         </div>
       </div>
+
+      <div id="footerBlock">
+        <div id="footerContent">
+          <div id="footerMessenger">
+          <div class="messenger">
+            <a href="https://www.instagram.com/funny.jobs/"><img class="instagram" src="img/instagram.svg" alt="insta"></a>
+            <a href="https://vk.com/funnyjobs"><img class="vk" src="img/vk.svg" alt="vk"></a>
+          </div>
+            <div class="pUp"><img src="img/pUp.svg" alt=""></div>
+        </div>
+        <div>
+          <h1>Время работы</h1>
+          <h2>
+            Пн-Сб 10:00−21:00 Вс 11:00−20:00
+          </h2>
+        </div>
+        <div id="phoneFooter">
+          <h1>Телефон</h1>
+          <h2>+7 (911) 600 - 30 - 53</h2>
+          <button><div><a href="tel:+79658077817"><img src="img/phone.svg" alt=""><span>Позвонить</span></div></a></button>
+        </div>
+        <div id="Place">
+          <h1>Адреса</h1>
+          <h2>Великий Новгород
+          <p></p>— ул. Большая Санкт-Петербургская, 39,  ТЦ «Волна» секция 124</p>
+          — ул. Ломоносова, 29, ТЦ «Мармелад», 1 этаж</h2>
+        </div>
+        <div id="logoFooter">
+          <a href="index.html"><img src="img/logo.svg" alt=""></a>
+          <h3>2016-2021</h3>
+        </div>
+        </div>
+      </div>
+
     </footer>
     
-
+    
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+    
     <script src="js/main.js"></script>
+    <script src="js/slick.js"></script>
     <script src="js/slider.js"></script>
     <script>new Sim()</script>
+    
 </body>
 
 </html>

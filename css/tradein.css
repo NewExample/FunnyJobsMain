@@ -1,8 +1,6 @@
 /*TradeIn css*/
 
 main .content {
-  width: 86%;
-  margin: auto;
   white-space: nowrap;
 }
 .greyText {
@@ -17,22 +15,29 @@ main .content p {
   line-height: 22px;
   margin-top: 40px;
 }
+
 .TitleText {
-  width: 29.92%;
+  width: 100%;
   margin-top: 19px;
   margin-bottom: 12px;
   font-weight: bold;
   font-size: 36px;
   line-height: 47px;
+  white-space: normal;
+}
 }
 #marginUp {
   margin-top: 20px;
 }
+.technicalSpecifications {
+  margin-top: 20px;
+}
 .TradeInInfo {
-  width: 40%;
+  width: 100%;
   margin-bottom: 46px;
   font-size: 18px;
   line-height: 23px;
+  white-space: normal;
 }
 .TradeInBlock {
   width: 87.74%;
@@ -82,7 +87,7 @@ select {
   border: none;
 }
 .buttonText {
-  width: 30.29%;
+  width: 315px;
 }
 .firstPhone {
   margin-bottom: 7px;
@@ -116,14 +121,15 @@ select {
 }
 /*Личный кабинет css*/
 .personalInfo {
-  width: 37.1%;
+  width: 460px;
   margin-top: 65px;
   margin-bottom: 73px;
   display: flex;
   justify-content: space-between;
 }
 .photoAccount {
-  width: 36.09%;
+  min-width: 166px;
+  margin-right: 20px;
 }
 .aboutAccount {
   width: 59.57%;
@@ -136,7 +142,10 @@ select {
 }
 .orderSearch,
 .orderStatus {
-  width: 45.95%;
+  min-width: 253px;
+}
+.orderSearch{
+  margin-right: 45px;
 }
 .coins {
   margin: 26px 0 4px 0;
@@ -204,4 +213,13 @@ select {
 }
 .exit a {
   color: #d1244d;
+}
+.exit a:hover{
+  font-weight: bold;
+}
+#hideCalc {
+  display: none;
+}
+#ShowCalculator{
+  display: none;
 }

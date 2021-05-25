@@ -39,7 +39,8 @@ select {
 }
 
 iframe {
-  max-width: 86%;
+  width: 86%;
+  height: 550px;
 }
 body {
   font-family: "PT Sans";
@@ -164,6 +165,7 @@ li {
   display: flex;
   justify-content: space-between;
   margin: 60px 0;
+  width: 100%;
 }
 .smartphone img {
   background-image: no-repeat bottom;
@@ -216,7 +218,7 @@ li {
 .description {
   font-weight: normal;
   font-size: 16px;
-  max-width: 193px;
+
   text-align: center;
   margin-top: 12px;
 }
@@ -268,8 +270,8 @@ li {
 
 .block {
   margin-top: 64px;
-  margin-bottom: 136px;
 }
+
 .normal {
   font-weight: normal;
   font-size: 16px;
@@ -777,8 +779,6 @@ iframe {
   overflow: auto;
 }
 .textRem {
-  width: 118%;
-  margin-left: -7.8%;
 }
 #HeadRemont {
   margin-left: 0px;
@@ -861,6 +861,10 @@ iframe {
 .salesFooter {
   margin-top: 64px;
 }
+
+@media only screen and (min-width: 1364px) {
+}
+
 /*Catalog css*/
 .ButtonBasket {
   margin-top: 12px;
@@ -1240,9 +1244,7 @@ iframe {
 /**HEADER SEARCH**/
 
 .hideSearch {
-  position: static;
   width: 100%;
-
   background-color: white;
   height: 248px;
   box-shadow: 0px 2px 8px rgba(22, 22, 22, 0.15);
@@ -1261,4 +1263,8 @@ iframe {
 .TextSearch {
   padding-top: 19px;
   margin-left: 25.63%;
+}
+.descriptionSales p span {
+  font-size: 18px;
+  line-height: 23px;
 }

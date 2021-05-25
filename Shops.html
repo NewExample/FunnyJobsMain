@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/Headlines.css">
   <link rel="stylesheet" href="css/new.css">
+  <link rel="stylesheet" href="css/media.css">
   <link rel="stylesheet" href="css/normalize.css">
   
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -83,11 +84,14 @@
             </div>
             <div class="placeHeader">
               <p>Великий Новгород</p>
-              <p id="grey">Пн−Сб 10:00−21:00, Вс 11:00−20:00</p>
+              <p id="grey">Пн−Сб 10:00−21:00<span class="HidePlace">, Вс 11:00−20:00</span></p>
+              <p id="grey" class="showPlace">Вс 11:00−20:00</p>
+      
+      
             </div>
           </div>
           <div class="searchHeader">
-            <button class="placeAnOrder catalogButton"><img src="img/gamburger.svg" alt=""><span>Каталог
+            <button class="placeAnOrder catalogButton"><img src="img/gamburger.svg" alt=""><span class="hideCatalog">Каталог
                 товаров</span></button>
             <div class="inputHeader">
               <input type="text" class="resizedHeader" placeholder="Apple iPhone">
@@ -112,6 +116,28 @@
               </div>
             </div>
           </div>
+      
+          <div id="logoHeader">
+            <button class="placeAnOrder catalogButton"><img src="img/gamburger.svg" alt=""></button>
+            <div class="imgLogoHeader"><a href="index.html"><img src="img/logo.svg" alt=""></a></div>
+            <div class="cabinetNumCenter">
+              <a href="Basket.html">
+                <button>
+      
+                  <img src="img/basket.svg" alt=""><span class="centerNum">3</span>
+      
+                </button>
+              </a>
+            </div>
+          </div>
+      
+          <div id="searchHeader">
+            <div class="inputHeader">
+              <input type="text" class="resizedHeader" placeholder="Apple iPhone">
+              <span class="buttonSearchHiden"><img src="img/search.svg" alt=""></span>
+            </div>
+          </div>
+      
         </div>
         <div class="hideSearch hide">
           <div class="TextSearch">
@@ -126,10 +152,8 @@
         <div class="way"><span class="greyText">Главная /</span>  Магазины</div>
         <div class="titleHeadlines">Магазины</div>
 
-        <iframe
-          src="https://yandex.ru/map-widget/v1/?um=constructor%3Aef6eed7dc0198f78e3bdfb743c830a49ac401659752bceae4d6962bb3e1ebfe7&amp;source=constructor"
-          width="100%" height="624" frameborder="0">
-        </iframe>
+        <iframe class="yandexCart"
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3Aef6eed7dc0198f78e3bdfb743c830a49ac401659752bceae4d6962bb3e1ebfe7&amp;source=constructor"  frameborder="0"></iframe>
       </div>
       </main>
 
@@ -180,8 +204,47 @@
             </div>
       
           </div>
+
+          
+        </div>
+
+        <div id="footerBlock">
+          <div id="footerContent">
+            <div id="footerMessenger">
+              <div class="messenger">
+                <a href="https://www.instagram.com/funny.jobs/"><img class="instagram" src="img/instagram.svg" alt="insta"></a>
+                <a href="https://vk.com/funnyjobs"><img class="vk" src="img/vk.svg" alt="vk"></a>
+              </div>
+              <div class="pUp"><img src="img/pUp.svg" alt=""></div>
+            </div>
+            <div>
+              <h1>Время работы</h1>
+              <h2>
+                Пн-Сб 10:00−21:00 Вс 11:00−20:00
+              </h2>
+            </div>
+            <div id="phoneFooter">
+              <h1>Телефон</h1>
+              <h2>+7 (911) 600 - 30 - 53</h2>
+              <button>
+                <div><a href="tel:+79658077817"><img src="img/phone.svg" alt=""><span>Позвонить</span></div></a>
+              </button>
+            </div>
+            <div id="Place">
+              <h1>Адреса</h1>
+              <h2>Великий Новгород
+                <p></p>— ул. Большая Санкт-Петербургская, 39,  ТЦ «Волна» секция 124</p>
+                — ул. Ломоносова, 29, ТЦ «Мармелад», 1 этаж
+              </h2>
+            </div>
+            <div id="logoFooter">
+              <a href="index.html"><img src="img/logo.svg" alt=""></a>
+              <h3>2016-2021</h3>
+            </div>
+          </div>
         </div>
       </footer>
+
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/slider.js"></script>

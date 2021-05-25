@@ -11,7 +11,58 @@
 .catalogButton {
   white-space: nowrap;
 }
-
+.catalog .smartphone,
+.accessories,
+.laptops,
+.technic,
+.tablets {
+  display: table-column;
+  width: 18.71%;
+  height: 18.71%;
+}
+.pictures img {
+  width: 59.48%;
+  margin-top: 24px;
+  margin-bottom: 13px;
+}
+.shopVolna {
+  width: 32%;
+}
+.shop {
+  width: 100%;
+}
+.liderITEMS,
+.smartphoneITEMS,
+.accessoriesITEMS,
+.laptopsITEMS,
+.technicITEMS,
+.tabletsITEMS {
+  width: 15.56%;
+}
+.liderITEMS .description,
+.smartphoneITEMS .description,
+.accessoriesITEMS .description,
+.laptopsITEMS .description,
+.technicITEMS .description,
+.tabletsITEMS .description {
+  height: 55px;
+  width: 100%;
+}
+.liderITEMS #lider,
+.smartphoneITEMS #smartphone,
+.accessoriesITEMS #accessories,
+.laptopsITEMS #laptops,
+.technicITEMS #technic,
+.tabletsITEMS #tablets {
+  width: 100%;
+}
+.smartphone div,
+.accessories div,
+.laptops div,
+.technic div,
+.tablets div {
+  margin-top: 0;
+}
 button,
 a,
 select {
@@ -29,6 +80,9 @@ select option {
   max-width: 87%;
   margin: 0 auto;
 }
+.salesHidden {
+  display: none;
+}
 .resizedHeader {
   width: 100%;
   border: 1px solid #7d7d7d;
@@ -39,8 +93,11 @@ select option {
   margin-right: 5.32%;
 }
 .imgLogoHeader {
-  width: 11.13%;
-  margin-right: auto;
+  min-width: 11.13%;
+  margin-right: 112px;
+}
+.showPlace {
+  display: none;
 }
 header .placeAnOrder {
   font-size: 16px;
@@ -58,9 +115,12 @@ li {
   list-style-type: none;
   margin-right: 7.11%;
 }
+.headerNav {
+  max-width: 100%;
+}
 .navigationHeader {
-  width: 38.29%;
-  margin-right: auto;
+  min-width: 38.29%;
+  margin-right: 147px;
   white-space: nowrap;
 }
 .phone {
@@ -74,14 +134,15 @@ li {
   justify-content: center;
 }
 .placeHeader {
-  width: 17.42%;
+  min-width: 17.42%;
   align-items: center;
 }
+
 .phone img {
   margin-bottom: -1.5px;
 }
 .searchHeader .placeAnOrder {
-  width: 15.16%;
+  width: 188px;
   height: 40px;
   padding: 8px 24px;
   margin: 0;
@@ -100,10 +161,29 @@ li {
   align-items: center;
   align-content: center;
   justify-content: center;
-  margin-left: -5%;
+  margin-left: -30px;
+}
+#logoHeader {
+  display: none;
+  justify-content: space-between;
+}
+#logoHeader .placeAnOrder {
+  width: 50px;
+}
+
+#logoHeader .imgLogoHeader {
+  margin-right: 0;
+}
+#searchHeader {
+  display: none;
+}
+
+#searchHeader .inputHeader {
+  margin: 24px 0 0 0;
+  width: 100%;
 }
 .cabinetBlock {
-  width: 19.75%;
+  width: 245px;
   display: flex;
   justify-content: space-between;
 }
@@ -236,7 +316,9 @@ li {
   font-size: 18px;
   line-height: 23px;
 }
-.order * {
+.order .imgOrder,
+#OrderFlex,
+.deleteOrder {
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -263,8 +345,8 @@ li {
   background: #ffffff;
   border: 1px solid #aaaaaa;
   border-radius: 4px;
-  width: 41%;
-  height: 30px;
+  width: 64px;
+  height: 42px;
 }
 
 .sale,
@@ -273,7 +355,7 @@ li {
 }
 .minus,
 .resized {
-  margin-right: 5.19%;
+  margin-right: 8px;
 }
 .minus,
 .plus {
@@ -282,13 +364,22 @@ li {
   align-content: center;
   justify-content: center;
 
-  height: 30px;
-  width: 30px;
+  min-height: 42px;
+  min-width: 36px;
   border-radius: 4px;
   background: #e8e8e8;
   border: none;
   font-size: 22px;
   line-height: 28px;
+}
+.plus {
+  margin-right: 20px;
+}
+.minus {
+  margin-left: 20px;
+}
+#OrderFlex {
+  width: 600px;
 }
 .result {
   margin-top: 24px;
@@ -313,7 +404,7 @@ li {
   margin-top: 63px;
 }
 .descriptionOrder {
-  width: 23.38%;
+  width: 174px;
   display: block;
   align-content: center;
   align-items: center;
@@ -361,25 +452,22 @@ li {
   padding-top: 64px;
 }
 .hrefPartners {
-  width: 17.26%;
-  margin-right: 6.85%;
+  width: 25%;
 }
 .hrefCatalog {
-  width: 6.53%;
-  margin-right: 18.79%;
+  width: 25%;
 }
 .hrefBlock {
-  width: 13.63%;
-  margin-right: 11.69%;
+  width: 25%;
 }
 .contactsBlock {
-  width: 17.4%;
-  margin-right: 10.81%;
+  width: 25%;
 }
 .phoneNumber {
   margin-top: 18px;
   font-size: 24px;
   line-height: 31px;
+  white-space: nowrap;
 }
 .messenger * {
   margin-right: 10px;
@@ -430,10 +518,11 @@ select {
 }
 
 .code {
-  width: 36%;
+  width: 164px;
   white-space: nowrap;
   font-size: 14px;
   line-height: 18px;
+  padding: 12px 3px;
 }
 .input {
   width: 59.13%;
@@ -457,7 +546,7 @@ select {
 }
 .promocode {
   margin-top: 44px;
-  margin-bottom: -20px;
+
   font-size: 14px;
   line-height: 18px;
 }
@@ -510,7 +599,6 @@ select {
 
 /* для элемента label, связанного с .custom-checkbox */
 .custom-checkbox + label {
-  display: inline-flex;
   align-items: center;
   user-select: none;
 }
@@ -565,11 +653,10 @@ select {
 }
 
 .checkbox {
-  width: 69.86%;
+  width: 100%;
   margin-top: 53px;
   font-size: 12px;
   line-height: 16px;
-  white-space: nowrap;
 }
 
 /*fonts*/
@@ -602,8 +689,80 @@ footer a {
 footer a:hover {
   font-weight: bold;
   color: black;
-  white-space: nowrap;
 }
 button:hover {
   background: #f6cd53;
+}
+
+#footerBlock {
+  display: none;
+  opacity: 0.8;
+  background: rgba(232, 232, 232, 0.5);
+  box-shadow: inset 0px 4px 12px rgba(0, 0, 0, 0.15);
+  height: 537px;
+}
+#footerBlock h1,
+h2,
+h3 {
+  margin: 0;
+}
+#footerBlock h1 {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 24px;
+}
+#footerBlock h2 {
+  margin-top: 4px;
+  font-size: 14px;
+  font-weight: normal;
+}
+#footerBlock h3 {
+  font-weight: normal;
+  font-size: 12px;
+  margin-top: 8px;
+}
+#logoFooter {
+  width: 107px;
+  margin-top: 24px;
+}
+#Place {
+  width: 281px;
+}
+#Place p {
+  margin: 5px;
+}
+#footerBlock #footerContent {
+  padding: 0px 16px 0 16px;
+}
+#footerMessenger {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding-top: 40px;
+}
+#phoneFooter button {
+  margin-top: 12px;
+  border: 1px solid #161616;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  border-radius: 4px;
+  padding: 8px 16px;
+}
+#phoneFooter button div a span {
+  margin-left: 8px;
+}
+#phoneFooter button div a {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+footer #footerBlock a:hover {
+  font-weight: normal;
+  cursor: pointer;
+}
+footer #footerBlock .pUp img:hover {
+  cursor: pointer;
 }
