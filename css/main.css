@@ -1,17 +1,18 @@
 html,
 body {
   margin-top: 0;
+  overflow-x: hidden;
 }
 * {
   box-sizing: border-box;
 }
 @font-face {
   font-family: "PT Sans";
-  src: url("/fonts/PTSans-Regular.ttf") format("truetype");
+  src: url("fonts/PTSans-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "PT Sans Bold";
-  src: url(/fonts/PTSans-Bold.ttf) format("truetype");
+  src: url(fonts/PTSans-Bold.ttf) format("truetype");
   font-weight: bold;
 }
 button,
