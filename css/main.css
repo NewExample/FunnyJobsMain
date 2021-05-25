@@ -8,11 +8,11 @@ body {
 }
 @font-face {
   font-family: "PT Sans";
-  src: url("fonts/PTSans-Regular.ttf") format("truetype");
+  src: url("/fonts/PTSans-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "PT Sans Bold";
-  src: url(fonts/PTSans-Bold.ttf) format("truetype");
+  src: url(/fonts/PTSans-Bold.ttf) format("truetype");
   font-weight: bold;
 }
 button,
@@ -806,7 +806,7 @@ iframe {
 }
 #secondSales {
   margin-top: 64px;
-  background: url(../img/cristmas.PNG);
+  background: url(../img/cristmas.png);
   border-radius: 16px;
 }
 .photoSales {
