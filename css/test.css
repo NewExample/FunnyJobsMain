@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+}
+.menu {
+  transform: translateX(-160%);
+  transition: 0.5s;
+  z-index: 99;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+.menu_active {
+  transform: translateX(0%);
+}
+.leftMenu {
+  min-width: 347px;
+  background-color: white;
+  height: 100vh;
+  display: flex;
+}
+#exitOverlay {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.mouseenter {
+  min-width: 500px;
+}
+.rightMenu {
+  background-color: black;
+  opacity: 0.5;
+  width: 2000vh;
+  height: 100vh;
+}
+.firstColumn {
+  margin-top: 31px;
+  margin-left: 52px;
+  width: 215px;
+}
+.firstColumn div {
+  margin-bottom: 32px;
+}
+.Overlay {
+  margin-left: 5px;
+  display: flex;
+}
+.Overlay a {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-left: 14px;
+  font-weight: normal;
+  font-size: 24px;
+}
+.menu {
+  display: flex;
+}
+.rightColumns {
+  margin-top: 160px;
+  display: none;
+}
+.seekRightColumns {
+  display: block;
+}

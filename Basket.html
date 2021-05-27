@@ -1,40 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="img/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/Headlines.css">
   <link rel="stylesheet" href="css/new.css">
+  <link rel="stylesheet" href="css/test.css">
   <link rel="stylesheet" href="css/media.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
-  <title>Document</title>
+  <title>FunnyJobs</title>
 </head>
 <body>
-    <!-- Выпадающее Меню -->
-    <div class="wrapper">
-    
-      <div class="menu">
-        <div class="fistcolumnOverlay">
-          <div class="menu-list">
-    
-            <div> <a href="#"></a><img src="img/logo.svg" alt="" width="29.86%"></a></div>
-            <div class="Overlay catalogOverlay "><a href="#">Каталог</a></div>
-            <div class="Overlay smartphoneOverlay"><img src="img/phoneNav.svg" alt=""><a href="#">Смартфоны</a></div>
-            <div class="Overlay laptopsOverlay"><img src="img/labtobsNav.svg" alt=""><a href="#">Ноутбуки</a></div>
-            <div class="Overlay accessoriesOverlay"><img src="img/AcsesuaresNav.svg" alt=""><a href="#">Аксессуары</a></div>
-            <div class="Overlay tecnicsOverlay"><img src="img/TechnicNav.svg" alt=""><a href="#">Техника</a></div>
-            <div class="Overlay tabletsOverlay"><img src="img/macNav.svg" alt=""><a href="#">Планшеты</a></div>
-            <div class="Overlay brendsOverlay"><img src="img/brendNav.svg" alt=""><a href="#">Бренды</a></div>
-          </div>
-    
-    
-          <div class="smarphonesMenu">
-            <p>Смартфоны</p>
-            <p>Дешёвые смартфоны</p>
+    <div class="menu">
+      <div class="leftMenu">
+        <div class="firstColumn">
+          <div> <a href="#"></a><img src="img/logo.svg" alt="" width="215px" height="70px"></a></div>
+          <div class=" catalogOverlay" id="textCatalog"><a href="#">Каталог</a></div>
+          <div class="Overlay smartphoneOverlay"><img src="img/phoneNav.svg" alt=""><a href="#">Смартфоны</a></div>
+          <div class="Overlay laptopsOverlay"><img src="img/labtobsNav.svg" alt=""><a href="#">Ноутбуки</a></div>
+          <div class="Overlay accessoriesOverlay"><img src="img/AcsesuaresNav.svg" alt=""><a href="#">Аксессуары</a></div>
+          <div class="Overlay tecnicsOverlay"><img src="img/TechnicNav.svg" alt=""><a href="#">Техника</a></div>
+          <div class="Overlay tabletsOverlay"><img src="img/macNav.svg" alt=""><a href="#">Планшеты</a></div>
+          <div class="Overlay brendsOverlay"><img src="img/brendNav.svg" alt=""><a href="#">Бренды</a></div>
+        </div>
+        <div class="secondColumn">
+          <div class="smartphonesMenu rightColumns">
+            <p id="titleOverlay">Смартфоны</p>
+            <p id="firstPup">Дешёвые смартфоны</p>
             <p>С хорошей камерой</p>
             <p>Для игр</p>
             <p>Apple iPhone</p>
@@ -44,18 +41,70 @@
             <p>Huawei</p>
             <p>LG</p>
             <p>Meizu</p>
-            <p>Посмотреть всё →</p>
+            <p id="viewALL">Посмотреть всё →</p>
+          </div>
+          <div class="laptopsMenu rightColumns">
+            <p id="titleOverlay">Ноутбуки</p>
+            <p id="firstPup">Ноутбуки для учёбы</p>
+            <p>Ноутбуки для работы</p>
+            <p>Ноутбуки для игр</p>
+            <p>Apple Macbook</p>
+            <p>Xiaomi</p>
+            <p>Samsung</p>
+            <p>Huawei</p>
+            <p>Lenovo</p>
+            <p>ASUS</p>
+            <p>Razer</p>
+            <p id="viewALL">Посмотреть всё →</p>
+          </div>
+          <div class="accessoriesMenu rightColumns">
+            <p id="titleOverlay">Аксессуары</p>
+            <p id="firstPup">Беспроводные наушники</p>
+            <p>Умные часы</p>
+            <p>Фитнес-браслеты</p>
+            <p>Apple Watch</p>
+            <p>Apple AirPods</p>
+            <p>Xiaomi Mi Band</p>
+            <p>Samsung Watch</p>
+            <p id="viewALL">Посмотреть всё →</p>
+          </div>
+          <div class="tecnicsMenu rightColumns">
+            <p id="titleOverlay">Техника</p>
+            <p id="firstPup">Пылесосы</p>
+            <p>Увлажнители воздуха</p>
+            <p>Xiaomi</p>
+            <p>Умный дом Apple</p>
+            <p>Выключатели</p>
+            <p>Умные лампы</p>
+            <p id="viewALL">Посмотреть всё →</p>
+          </div>
+          <div class="tabletsMenu rightColumns">
+            <p id="titleOverlay">Планшеты</p>
+            <p id="firstPup">Планшеты для рисования</p>
+            <p>Стилусы для iPod</p>
+            <p>Планшеты для работы</p>
+            <p>Apple iPod</p>
+            <p>Samsung Galaxy Tab</p>
+            <p>Lenovo Yoga</p>
+            <p id="viewALL">Посмотреть всё →</p>
+          </div>
+          <div class="brendsMenu rightColumns">
+            <p id="titleOverlay">Бренды</p>
+            <p id="firstPup">Apple</p>
+            <p>Xiaomi</p>
+            <p>Samsung</p>
+            <p>OPPA</p>
+            <p>OnePlus</p>
+            <p>Nokia</p>
+            <p id="viewALL">Посмотреть всё →</p>
           </div>
         </div>
       </div>
     
-      <div class="right">
-        <div class="exitOverlay">
-          <img class="cross" src="img/Group.svg" alt="" width="16px">
-        </div>
+      <div class="rightMenu">
+        <img id="exitOverlay" src="img/exitLC.svg" alt="">
       </div>
     </div>
-    <!-- Выпадающее Меню -->
     
     
     
@@ -69,17 +118,23 @@
                 <li><a href="Sales.html">Акции</a></li>
                 <li><a href="Remont.html">Ремонт</a></li>
                 <li><a href="Trade-In.html">Trade-In</a></li>
-                <li><a href="Shops.html">Магазины</a></li>
+                <li><a href="Shops.html">О компании</a></li>
                 <li><a href="Contacts.html">Контакты</a></li>
               </ul>
             </nav>
           </div>
           <div class="phone">
     
-            <a href="tel:+79658077817"><img src="img/phone.svg" alt="" width="12px"> <span>+7 965 807 78 18</span></a>
+            <a href="tel:+79658077817"><img src="img/phone.svg" alt="" width="16px"> <span class="hidenPhone">+7 965 807 78
+                18</span></a>
+    
           </div>
           <div class="placeHeader">
-            <p>Великий Новгород</p>
+            <p>
+              <a href="https://www.instagram.com/funny.jobs/"><img src="img/colorInsta.svg" alt="" width="18px"></a>
+              <a href="https://vk.com/funnyjobs"><img src="img/colorVk.svg" alt="" width="18px"></a>
+              Великий Новгород
+            </p>
             <p id="grey">Пн−Сб 10:00−21:00<span class="HidePlace">, Вс 11:00−20:00</span></p>
             <p id="grey" class="showPlace">Вс 11:00−20:00</p>
     
@@ -241,10 +296,7 @@
 
 
                   </div>
-                  <div class="smallWidth">
-                    <p class="navTitleContacts">Подготовить сдачу с</p>
-                    <input type="text" placeholder="1000 руб.">
-                  </div>
+                  
                 </div>  
               </div>  
 

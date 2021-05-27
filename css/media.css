@@ -11,6 +11,11 @@
   }
   /**Header**/
 }
+@media screen and (max-width: 1435px) {
+  .hidenPhone {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 1376px) {
   /**Header**/
